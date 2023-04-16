@@ -6,9 +6,11 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
-    text: '#212121',
     accent: '#00FFFF',
-    white: '#ffffff'
+    white: '#ffffff',
+    black: '#000000',
+    grey: '#404040',
+    light_grey: '#E0E0E0'
   }
 }
 
