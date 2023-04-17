@@ -8,7 +8,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 				<Photo
 					src={avatar}
 					alt="User avatar"
-					class="avatar"
+					
 				/>
 				<DescriptionName>{username}</DescriptionName>
 				<DescriptionText>@{tag}</DescriptionText>
@@ -17,16 +17,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
 
 			<Stats>
 				<StatsWrap>
-					<span class="label">Followers</span>
-					<span class="quantity"><b>{stats.followers}</b></span>
+					<span >Followers</span>
+					<span ><b>{stats.followers}</b></span>
 				</StatsWrap>
 				<StatsWrap>
-					<span class="label">Views</span>
-					<span class="quantity"><b>{stats.views}</b></span>
+					<span >Views</span>
+					<span ><b>{stats.views}</b></span>
 				</StatsWrap>
 				<StatsWrap>
-					<span class="label">Likes</span>
-					<span class="quantity"><b>{stats.likes}</b></span>
+					<span >Likes</span>
+					<span ><b>{stats.likes}</b></span>
 				</StatsWrap>
 			</Stats>
 		</ProfileContainer>

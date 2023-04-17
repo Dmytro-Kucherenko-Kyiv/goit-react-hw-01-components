@@ -4,7 +4,7 @@ import { THead, Table, Tr } from './Transaction.styled';
 
 export const TransactionHistory = ({items}) => {
 	return (
-		<Table class="transaction-history">
+		<Table>
 			<THead>
 				<Tr>
 					<th>Type</th>
@@ -36,4 +36,4 @@ TransactionHistory.propTypes = {
       currency: PropTypes.string.isRequired,
     }).isRequired
   ).isRequired,
-}
+};
