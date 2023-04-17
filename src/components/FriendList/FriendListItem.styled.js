@@ -7,6 +7,10 @@ export const FriendItem = styled.li`
 	border-radius: 5px;
 	box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
 
+	&:hover {
+    background: ${props => props.theme.colors.accent};
+  }
+
 `
 
 export const FriendStatus = styled.span`

@@ -1,9 +1,11 @@
 import user from './Profile/user.json';
 import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
+import transactions from './Transaction/transactions.json';
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './Transaction/Transaction';
 
 export const App = () => {
   return (
@@ -16,7 +18,9 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
-        gap: '25px'
+        gap: '40px',
+        paddingTop: '50px',
+        paddingBottom: '50px'
       }}
     >
       
@@ -32,6 +36,8 @@ export const App = () => {
       <Statistics stats={data} />
 
       <FriendList friends={friends} />
+
+      <TransactionHistory items={transactions} />
 
     </div>
   );
